@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Spotify Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <h1>RetroPlayer</h1>
+      </div>
+      <ul class="sidebar-links">
+        <li>Home</li>
+        <li>Search</li>
+        <li>Your Library</li>
+      </ul>
+      <div class="playlists">
+        <h3>Your Playlists</h3>
+        <ul>
+          <li>Playlist 1</li>
+          <li>Playlist 2</li>
+          <li>Playlist 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <input type="text" id="searchBar" placeholder="Search">
+        <div class="profile">
+          <img src="D:\Study Material\Class Codes\MERN Lab\Music Player\one piece bigmeme.png" alt="User Profile">
+        </div>
+      </div>
+      <div class="now-playing">
+        <img src="https://via.placeholder.com/150" alt="Album Art">
+        <div class="track-info">
+          <h2 id="songTitle">Charas Ganja</h2>
+          <p id="artistName">BigMeme</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" class="control-btn">⏮</button>
+        <button id="playPauseBtn" class="control-btn">▶</button>
+        <button id="nextBtn" class="control-btn">⏭</button>
+      </div>
+      <div class="queue">
+        <h3>Queue</h3>
+        <ul id="queueList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" src="" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

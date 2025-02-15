@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px); /* 8 columns of equal size */
+  grid-template-rows: repeat(8, 60px);   /* 8 rows of equal size */
+  gap: 0; /* No spacing between cells */
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.cell.black {
+  background-color: #5a5a5a; /* Dark gray for black squares */
+}
+
+.cell.white {
+  background-color: #ffffff; /* White squares */
+}
+
+.piece {
+  cursor: grab;
+}

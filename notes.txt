@@ -1,0 +1,9 @@
+flex box very very imp
+temporal dead zone very very very imp
+
+easy: notion
+medium: spotify
+hard: chess
+
+by defaut aceess modifier: private/protected/public
+generic vs unknown
